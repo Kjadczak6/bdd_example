@@ -1,7 +1,6 @@
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import org.jbehave.core.annotations.Given;
+import org.jbehave.core.annotations.Then;
+import org.jbehave.core.annotations.When;
 
 import static org.junit.Assert.assertEquals;
 
@@ -11,9 +10,9 @@ public class StepdefsAdd {
     public void iHaveTwoNumbersToAdd() {
     }
 
-    @And("^thinking about answer$")
-    public void iThinkingAboutAnswer() {
-    }
+   // @And("^thinking about answer$")
+   // public void iThinkingAboutAnswer() {
+  //  }
 
     @When("^I add \"([^\"]*)\" to \"([^\"]*)\"$")
     public void iAddTo(Integer firstNumber, Integer secondNumber) throws Throwable {
